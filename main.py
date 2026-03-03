@@ -1,0 +1,95 @@
+import random
+
+def first_story() :
+    number = input("Type Number: ")
+    date = input("Type a Measure of Time: ")
+    transport = input("Type Mode of Transport: ")
+    adjective = input("Type Adjective: ")
+    adjective2 = input("Type Adjective 2: ")
+    noun = input("Type Noun: ")
+    color = input("Type a Color: ")
+    body = input("Type Part of the Body: ")
+    verb = input("Type Verb: ")
+    number2 = input("Type Number 2: ")
+    noun2 = input("Type Noun 2: ")
+    noun3 = input("Type Noun 3: ")
+    body2 = input("Type Part of the Body 2: ")
+    noun4 = input("Type Noun 4: ")
+    adjective3 = input("Type Adjective 3: ")
+    sillyWord = input("Type Silly Word: ")
+
+    print("It was about " + number + " " + date + " ago when I arrived at the hospital in a " + transport + ".")
+    print(" The hospital is a/an " + adjective + " place, there are a lot of " + adjective2 + " " + noun + " here.")
+    print(" There are nurses here who have " + color + " " + body + ".")
+    print(" If someone wants to come into my room I told them that they have to " + verb + " first.")
+    print(" I’ve decorated my room with " + number2 + " " + noun2 + ".")
+    print(" Today I talked to a doctor and they were wearing a " + noun3 + " on their " + body2 + ".")
+    print(" I heard that all doctors " + verb + " " + noun4 + " every day for breakfast.")
+    print(" The most " + adjective3 + " thing about being in the hospital is the " + sillyWord + " " + noun + "! ")
+
+def second_story() :
+    properNoun = input("Type Proper Noun (Person’s Name): ")
+    noun = input("Type Noun: ")
+    adjective = input("Type Adjective (Feeling): ")
+    verb = input("Type Verb: ")
+    animal = input("Type an Animal: ")
+    adjective2 = input("Type Adjective (Feeling) 2: ")
+    verb2 = input("Type Verb 2: ")
+    color = input("Type a Color: ")
+    verbing = input("Type a Verb (ending in ing): ")
+    adverb = input("Type Adverb (ending in ly): ")
+    number = input("Type Number : ")
+    date = input("Type Measure of Time: ")
+    noun2 = input("Type Noun 2: ")
+    sillyWord = input("Type Silly Word: ")
+
+    print("This weekend I am going camping with " + properNoun + ".")
+    print(" I packed my lantern, sleeping bag, and " + noun + ".")
+    print(" I am so " + adjective + " to " + verb + " in a tent.")
+    print(" I am " + adjective2 + " we might see a(n) " + animal + ", I hear they’re kind of dangerous.")
+    print(" While we’re camping, we are going to hike, fish, and " + verb2 + ".")
+    print(" I have heard that the " + color + " lake is great for " + verbing + ".")
+    print(" Then we will " + adverb + " hike through the forest for " + number + " " + date + ".")
+    print(" If I see a " + color + " " + animal + " while hiking, I am going to bring it home as a pet! At night we will tell " + number + " " + sillyWord + " stories and roast " + noun2 + " around the campfire!! ")
+
+def third_story() :
+    properNoun = input("Type Proper Noun (Person’s Name): ")
+    adjective = input("Type Adjective: ")
+    color = input("Type a Color: ")
+    animal = input("Type an Animal: ")
+    place = input("Type Place: ")
+    adjective2 = input("Type Adjective: ")
+    creature = input("Type Magical Creature (Plural): ")
+    adjective3 = input("Type Adjective 3: ")
+    creature2 = input("Type Magical Creature (Plural) 2: ")
+    room = input("Type Room in a House: ")
+    noun = input("Type Noun: ")
+    noun2 = input("Type Noun 2: ")
+    noun3 = input("Type Noun (Plural) 3: ")
+    adjective4 = input("Type Adjective 4: ")
+    noun4 = input("Type Noun (Plural) 4: ")
+    number = input("Type number: ")
+    date = input("Type Measure of Time: ")
+    verbing = input("Type a Verb (ending in ing): ")
+    adjective5 = input("Type Adjective 5: ")
+    noun5 = input("Type Noun 5: ")
+
+    print("Dear " + properNoun + ", I am writing to you from a " + adjective + " castle in an enchanted forest.")
+    print(" I found myself here one day after going for a ride on a " + color + " " + animal + " in " + place + ".")
+    print(" There are " + adjective2 + " " + creature + " and " + adjective3 + " " + creature2 + " here! In the " + room + " there is a pool full of " + noun + ".")
+    print(" I fall asleep each night on a " + noun2 + " of " + noun3 + " and dream of " + adjective4 + " " + noun4 + ".")
+    print(" It feels as though I have lived here for " + number + " " + date + ".")
+    print(" I hope one day you can visit, although the only way to get here now is " + verbing + " on a " + adjective5 + " " + noun5 + "!!")
+
+choice = int(input("Choose a template (1, 2, 3): "))
+
+if choice <= 0 or choice > 3 :
+    choice = random.randint(1, 3)
+
+if choice == 1 :
+    first_story()
+elif choice == 2 :
+    second_story()
+elif choice == 3 :
+    third_story()
+
