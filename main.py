@@ -2,7 +2,7 @@ import random
 
 def first_story() :
     number = input("Type Number: ")
-    date = input("Type a Measure of Time: ")
+    time = input("Type a Measure of Time: ")
     transport = input("Type Mode of Transport: ")
     adjective = input("Type Adjective: ")
     adjective2 = input("Type Adjective 2: ")
@@ -18,7 +18,7 @@ def first_story() :
     adjective3 = input("Type Adjective 3: ")
     sillyWord = input("Type Silly Word: ")
 
-    print("It was about " + number + " " + date + " ago when I arrived at the hospital in a " + transport + ".")
+    print("It was about " + number + " " + time + " ago when I arrived at the hospital in a " + transport + ".")
     print(" The hospital is a/an " + adjective + " place, there are a lot of " + adjective2 + " " + noun + " here.")
     print(" There are nurses here who have " + color + " " + body + ".")
     print(" If someone wants to come into my room I told them that they have to " + verb + " first.")
